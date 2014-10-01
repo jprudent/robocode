@@ -406,7 +406,7 @@ public class RobotClassLoader extends URLClassLoader implements IRobotClassLoade
 	 * @return true if the class name is a system class; false otherwise.
 	 */
 	private static boolean isSystemClass(String className) {
-		return className.startsWith("java.") || className.startsWith("javax.") || className.startsWith("robocode.")
+		return className.startsWith("clojure.") || className.startsWith("java.") || className.startsWith("javax.") || className.startsWith("robocode.")
 				|| className.startsWith("net.sf.robocode.") || className.startsWith("tested.robots.");
 	}
 
